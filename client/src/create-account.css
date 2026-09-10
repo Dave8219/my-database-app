@@ -1,0 +1,62 @@
+.create-account-page {
+  background-color: #067195;
+  height: 100vh;
+}
+
+.create-account-page h1 {
+  color: white;
+  text-align: center;
+}
+
+.create-account-page .footer-text {
+  text-align: center;
+}
+
+.create-account-page .create-account-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #067195;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.form-group-container-ca {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group-ca {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.form-label-ca {
+  width: 120px;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.submit-btn-ca {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.error-message {
+  color: white;
+}
+
+.create-account-page .create-btn-container {
+  text-align: center;
+}
+.create-account-page footer {
+  background-color: #067195;
+}
