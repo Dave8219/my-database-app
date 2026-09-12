@@ -23,12 +23,7 @@ app.use(cookieParser());
 
 app.use(helmet());
 // Add your Netlify URL here after you deploy the frontend
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://marciinsurance.com",
-  "https://www.marciinsurance.com",
-  "https://marciinsurance.netlify.app",
-];
+const allowedOrigins = ["http://localhost:5173"];
 
 app.use(
   cors({
