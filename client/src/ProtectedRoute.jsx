@@ -6,12 +6,12 @@ const ProtectedRoute = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [authenticated, setAuthenticated] = useState(false);
 
-  const API = import.meta.env.VITE_API_BASE_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        await axios.get(`${API}/api/v1/auth/me`, {
+        await axios.get(`${API_URL}/api/v1/auth/me`, {
           withCredentials: true,
         });
 
@@ -24,7 +24,7 @@ const ProtectedRoute = ({ children }) => {
     };
 
     checkAuth();
-  }, [API]);
+  }, [API_URL]);
 
   if (loading) {
     return <h2>Loading...</h2>;
