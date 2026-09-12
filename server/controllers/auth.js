@@ -37,19 +37,20 @@ const login = async (req, res) => {
       expiresIn: process.env.JWT_EXPIRE,
     },
   );
-  /* ****** Use this cookie setting when deployed on HTTPS.
+
   res.cookie("token", token, {
     httpOnly: true,
     secure: true, // change to true when deployed HTTPS
     sameSite: "none",
   });
-*/
 
+  /*
   res.cookie("token", token, {
     httpOnly: true,
     secure: false, // change to true when deployed HTTPS
     sameSite: "lax",
   });
+*/
 
   // use later when deployed on https
   /*
